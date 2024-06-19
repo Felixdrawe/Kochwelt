@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kochwelt | Kontakt</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon" />
+
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="kochwelt">
+      <header>
+        <nav class="nav">
+          <div>
+            <a href="index.html"
+              ><img src="./img/logo.png" class="logo" alt="Kochwelt-Logo"
+            /></a>
+          </div>
+          <div class="menu">
+            <a href="index.html">Start</a>
+            <a onclick="sendRecipe(4)" href="recipe.html">Rezept des Tages</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="impressum.html">Impressum</a>
+          </div>
+          <div class="mobile-menu">
+            <img
+              class="bars"
+              src="./img/icons/bars-solid.svg"
+              onclick="openmobilemenu()" />
+            <div id="slidemenu" class="mobile-menu-overlay">
+              <a href="index.html">Start</a>
+              <a onclick="sendRecipe(4)" href="recipe.html">Rezept des Tages</a>
+              <a href="kontakt.html">Kontakt</a>
+              <a href="impressum.html">Impressum</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="maximumWidth">
+        <h1 class="h1">Kontakt</h1>
+        <div class="contact">
+          <h2 class="h2">Hast du Fragen oder Anregungen?</h2>
+          <form onsubmit="sendMail(event)">
+            <label for="name" class="flexlabel">Dein Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="Name"
+              placeholder="Name"
+              required />
+
+            <label for="mail" class="flexlabel">Deine E-Mail-Adresse:</label>
+            <input
+              type="email"
+              id="mail"
+              name="Email"
+              placeholder="E-Mail-Adresse"
+              required />
+
+            <label for="message" class="flexlabel">Deine Nachricht:</label>
+            <textarea
+              name="Nachricht"
+              id="message"
+              placeholder="Deine Nachricht..."
+              required></textarea>
+            <div class="checkbox-container">
+              <input type="checkbox" id="privacy" name="Datenschutz" />
+              <label for="privacy" required
+                >Ich akzeptiere die
+                <a href="datenschutz.html" target="_blank"
+                  >Datenschutzbestimmungen</a
+                ></label
+              >
+            </div>
+            <input id="send" type="submit" value="Absenden" />
+          </form>
+        </div>
+      </div>
+      <footer>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="kontakt.html">Kontakt</a>
+      </footer>
+    </div>
+  </body>
+</html>

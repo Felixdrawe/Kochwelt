@@ -1,0 +1,13 @@
+
+#Allen Robots lesen rechtlicher Dateien verbieten
+
+User-agent: *
+
+
+Disallow: /datenschutz.html
+Disallow: /impressum.html
+Disallow: /index.html
+Disallow: /kontakt.html
+Disallow: /recipe.html
+Disallow: /send_mail.html
+

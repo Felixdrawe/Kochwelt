@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon" />
+    <title>Kochwelt | Rezepte</title>
+  </head>
+
+  <body onload="recipe()">
+    <div class="kochwelt">
+      <header>
+        <nav class="nav">
+          <div>
+            <a href="index.html"
+              ><img src="./img/logo.png" class="logo" alt="Kochwelt-Logo"
+            /></a>
+          </div>
+          <div class="menu">
+            <a href="index.html">Start</a>
+            <a onclick="sendRecipe(4)" href="recipe.html">Rezept des Tages</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="impressum.html">Impressum</a>
+          </div>
+          <div class="mobile-menu">
+            <img
+              class="bars"
+              src="./img/icons/bars-solid.svg"
+              onclick="openmobilemenu()" />
+            <div id="slidemenu" class="mobile-menu-overlay">
+              <a href="index.html">Start</a>
+              <a onclick="sendRecipe(4)" href="recipe.html">Rezept des Tages</a>
+              <a href="kontakt.html">Kontakt</a>
+              <a href="impressum.html">Impressum</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="maxwidth">
+        <h1 id="meal">Ungarische Gulaschsuppe</h1>
+        <!--Rezeptname-->
+
+        <img id="mealIMG" class="img-header" src="./img/suppe.jpg" />
+        <!--Rezeptbild-->
+
+        <div class="overview">
+          <!--Überblick: Dauer, Schwierigkeitsgrad und Datum-->
+          <div class="shortinfo">
+            <img class="icon" src="./img/icons/clock-regular.svg" />
+            <div id="longTime1">60 Min.</div>
+          </div>
+          <div class="shortinfo">
+            <img class="icon" src="./img/icons/brain-solid.svg" />
+            <div id="difficulity">simpel</div>
+          </div>
+          <div class="shortinfo">
+            <img class="icon" src="./img/icons/calendar-alt-regular.svg" />
+            <div id="date">24.11.2023</div>
+          </div>
+        </div>
+
+        <div class="line"></div>
+        <!--Trennlinie-->
+
+        <div class="amount">
+          <!--Portionen auswählen-->
+          Zutaten für
+          <input type="number" min="1" id="amount" value="4" class="input" />
+          <button class="button" id="btn-receipe" onclick="calculate()">
+            Portionen
+          </button>
+        </div>
+
+        <div class="ingredients">
+          <!--Zutatenliste-->
+          <table>
+            <tbody id="ingredients"></tbody>
+          </table>
+        </div>
+
+        <h2>Zubereitung</h2>
+
+        <div class="overview">
+          <!--Zeitangabe für Zubereitung und Gesamtzeit-->
+          <div class="shortinfo">
+            <img class="icon" src="./img/icons/clock-regular.svg" />
+            <div id="shortTime">15 Minuten</div>
+          </div>
+          <div class="shortinfo">
+            <img class="icon" src="./img/icons/clock-regular.svg" />
+            <div id="longTime2">Gesamtzeit: ca. 60 Minuten</div>
+          </div>
+        </div>
+
+        <p id="description">
+          <!--Rezeptbeschreibung-->
+          Zu Beginn werden die Kartoffeln und die Karotten geschält, gewaschen
+          und in kleine Würfel geschnitten. Auch die Champignons werden geputzt
+          und in Scheiben geschnitten. Zusammen mit den klein gehackten Zwiebeln
+          wird der Rindergulasch in einem Topf mit etwas Öl angebraten. Die
+          Champignonscheiben werden hinzugefügt und mit angebraten. Die Paprika
+          wird ebenso gewürfelt und in den Topf hinzugegeben. Das ganze wird nun
+          mit Salz und Pfeffer abgeschmeckt.<br />
+          Als nächstes werden die Brühe und der Tomatensaft hinzugefügt und die
+          Suppe zum kochen gebracht. Mit den Gewürzen Kümmel, Tymian und
+          Paprikagewürz wird das ganze verfeinert und zum gewünschten Ergebnis
+          abgeschmeckt.<br />
+          Mit geschlossenem Deckel muss die Gulaschsuppe nun ca. 45 Minuten auf
+          leichter Stufe köcheln.
+        </p>
+
+        <h3>Rezept erstellt von</h3>
+
+        <div class="profile">
+          <!--Infos zum Ersteller mit Profilbild-->
+          <img id="profileIMG" class="rounded" src="./img/profile.png" />
+          <p id="signature" class="signature">Christian Becker</p>
+        </div>
+      </div>
+      <footer>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="kontakt.html">Kontakt</a>
+      </footer>
+    </div>
+  </body>
+</html>

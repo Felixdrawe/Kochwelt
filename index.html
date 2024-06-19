@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Viga&display=swap"
+      rel="stylesheet" />
+    <link rel="shortcut icon" href="./img/logo_small.png" type="image/x-icon" />
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Kochwelt | Home</title>
+  </head>
+
+  <body>
+    <div class="kochwelt_index">
+      <header>
+        <nav class="nav">
+          <div>
+            <a href="index.html"
+              ><img src="./img/logo.png" class="logo" alt="Kochwelt-Logo"
+            /></a>
+          </div>
+          <div class="menu">
+            <a href="index.html">Start</a>
+            <a onclick="sendRecipe(4)" href="recipe.html">Rezept des Tages</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="impressum.html">Impressum</a>
+          </div>
+          <div class="mobile-menu">
+            <img
+              class="bars"
+              src="./img/icons/bars-solid.svg"
+              onclick="openmobilemenu()" />
+            <div id="slidemenu" class="mobile-menu-overlay">
+              <a href="index.html">Start</a>
+              <a onclick="sendRecipe(4)" href="recipe.html">Rezept des Tages</a>
+              <a href="kontakt.html">Kontakt</a>
+              <a href="impressum.html">Impressum</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div>
+        <div class="maximumWidthIndex">
+          <div class="headline-container margin-everything">
+            <div>
+              <img class="headline-img" src="./img/croissant.jpg" alt="" />
+            </div>
+            <div>
+              <h2 class="headline-titel">Französische Croissants</h2>
+
+              <p>
+                Schmackhafte Croissants können auch zu Hause sehr einfach
+                gebacken werden. Mit ca. 30 Minuten Aufwand kannst du ein
+                wundervolles Frühstück zaubern.
+              </p>
+
+              <div class="headline-button">
+                <a onclick="sendRecipe(4)" href="recipe.html"
+                  ><button>Rezept öffnen</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="wasNeues-container">
+          <div class="maximumWidthIndex">
+            <div class="wasNeues-headline">
+              <h2>Lust auf was Neues?</h2>
+            </div>
+
+            <div class="wasNeues-Context">
+              <div class="wasNeues-Img-Order">
+                <a onclick="sendRecipe(3)" href="recipe.html"
+                  ><img
+                    class="wasNeues-img"
+                    src="./img/salat.jpg"
+                    alt="Griechischer Salat"
+                /></a>
+                <span>Griechischer Salat</span>
+              </div>
+
+              <div class="wasNeues-Img-Order">
+                <a onclick="sendRecipe(2)" href="recipe.html"
+                  ><img
+                    class="wasNeues-img"
+                    src="./img/suppe.jpg"
+                    alt="Ungarische Gulaschsuppe"
+                /></a>
+                <span>Ungarische Gulaschsuppe</span>
+              </div>
+
+              <div class="wasNeues-Img-Order">
+                <a onclick="sendRecipe(1)" href="recipe.html"
+                  ><img
+                    class="wasNeues-img"
+                    src="./img/pastavongole.jpg"
+                    alt="Pasta Venusmuschel"
+                /></a>
+                <span>Pasta Venusmuscheln</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="panVSwok-container">
+          <div class="maximumWidthIndex">
+            <div class="panVSwok-headline">
+              <h2>Pfanne vs. Wok - Was ist besser?</h2>
+            </div>
+
+            <div class="panVSwok-context">
+              <div>
+                <p>
+                  Die Frage, ob eine Pfanne oder ein Wok besser ist, hängt stark
+                  von den spezifischen Kochbedürfnissen und Vorlieben ab. Beide
+                  Kochgeschirre haben ihre eigenen einzigartigen Vorteile und
+                  sind für unterschiedliche Arten des Kochens geeignet. Hier
+                  finden Sie einige Aspekte, die Sie berücksichtigen sollten.
+                </p>
+              </div>
+              <div>
+                <img class="panVSwok-img" src="./img/wok.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <a href="datenschutz.html">Datenschutz</a>
+          <a href="impressum.html">Impressum</a>
+          <a href="kontakt.html">Kontakt</a>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
